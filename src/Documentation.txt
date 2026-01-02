@@ -1,0 +1,7 @@
+1. To generate Master schema from just a table
+    column name -> check if in basic columns(email,phone,etc) #these will prebuilt schema specifications
+                -> check data type
+                -> local llm generates a description based on column name and 5 non Null entries
+                -> constraints check from table schema and infer constraints if obvious
+                -> how  do i generate NULL threshold
+
