@@ -29,7 +29,9 @@ result = mapper.run()
 
 
 print(result["mapping"])
+print('\n')
 print(result["unmatched_uploaded"])
+print('\n')
 print(result["unmatched_master"])
 #how do   i access the uploaded csv??
 
