@@ -11,10 +11,10 @@ from typing import Dict, Tuple, Set
 DTYPE_COMPATIBILITY = {
     "string": {"string", "varchar"},
     "varchar": {"string", "varchar"},
-    "int": {"int", "bigint"},
-    "bigint": {"int", "bigint"},
-    "double": {"double", "float"},
-    "float": {"double", "float"},
+    "int": {"int", "bigint",'float','double'},
+    "bigint": {"int", "bigint",'float','double'},
+    "double": {"double", "float",'int','bigint'},
+    "float": {"double", "float",'int','bigint'},
     "date": {"date", "timestamp", "string"},
     "timestamp": {"timestamp", "date", "string"},
 }

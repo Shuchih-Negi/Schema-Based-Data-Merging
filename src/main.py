@@ -4,6 +4,8 @@ import numpy as np
 from spark.spark_session import get_spark
 import sys
 from  profile_gen import profile_column
+from column_mapper import ColumnMapper
+
 
 spark   = SparkSession.builder.appName('MasterData').getOrCreate()
 
@@ -22,7 +24,13 @@ profile_uploaded = profile_column(df)
 '''
 profile_master = profile_column(df2)
 
+mapper = ColumnMapper(profile_uploaded, profile_master)
+result = mapper.run()
 
+
+print(result["mapping"])
+print(result["unmatched_uploaded"])
+print(result["unmatched_master"])
 #how do   i access the uploaded csv??
 
 
