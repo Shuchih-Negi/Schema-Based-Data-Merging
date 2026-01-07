@@ -4,4 +4,4 @@
                 -> local llm generates a description based on column name and 5 non Null entries
                 -> constraints check from table schema and infer constraints if obvious
                 -> how  do i generate NULL threshold
-
+### idea is to basically turn off or  on whichever types of matching you want and still keep human in the loop
